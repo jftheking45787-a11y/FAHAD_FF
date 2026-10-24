@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fahad FF</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,700;1,800&family=Barlow:wght@400;500;600&family=Share+Tech+Mono&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.100 2.100M17 17l2.100 2.100M4.900 19.100 7 17M17 7l2.100-2.100" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.500v15l13-7.500z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><rect x="6" y="4.500" width="4" height="15" rx="1"/><rect x="14" y="4.500" width="4" height="15" rx="1"/></symbol>
+  <symbol id="i-vol-up" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.500 8.500a5 5 0 0 1 0 7M19 6a8.500 8.500 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-vol-down" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.500 8.500a5 5 0 0 1 0 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-vol-mute" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="m17 9.500 5 5M22 9.500l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-youtube" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M3 7.500A3.500 3.500 0 0 1 6.500 4h11A3.500 3.500 0 0 1 21 7.500v9a3.500 3.500 0 0 1-3.500 3.500h-11A3.500 3.500 0 0 1 3 16.500zM10 9v6l5.500-3z"/></symbol>
+  <symbol id="i-discord" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M7.200 5.800A15 15 0 0 1 12 5c1.700 0 3.300.3 4.800.8 1.800 2.600 2.700 5.500 3 9.200-1.500 1.100-3 1.800-4.600 2.300l-1-1.600c-.5.100-1.100.2-1.600.2s-1.100-.1-1.600-.2l-1 1.600C6 16.800 4.500 16.100 3 15c.3-3.700 1.200-6.600 4.200-9.200zM9.200 10.600a1.400 1.400 0 1 0 0 2.800 1.400 1.400 0 0 0 0-2.800zm5.600 0a1.400 1.400 0 1 0 0 2.800 1.400 1.400 0 0 0 0-2.800z"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M13.500 21v-7.500h2.600l.4-3h-3V8.600c0-.9.3-1.500 1.600-1.500h1.600V4.400c-.3 0-1.200-.1-2.300-.1-2.300 0-3.900 1.400-3.900 4v2.200H7.800v3h2.700V21z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.500" y="3.500" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3.800" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="7" r="1.200"/></symbol>
+  <symbol id="i-telegram" viewBox="0 0 24 24"><path d="M21.500 4.500 2.800 11.700c-.8.300-.8 1.200 0 1.500l4.700 1.500 1.800 5.600c.2.700 1 .9 1.500.4l2.600-2.500 4.800 3.500c.6.400 1.400.1 1.600-.7l3-15c.2-.9-.6-1.600-1.300-1.500z"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 21s7-6.200 7-11.500A7 7 0 0 0 5 9.500C5 14.800 12 21 12 21zm0-8.500a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 15 6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.600" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-cross" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v6M12 16v6M2 12h6M16 12h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+</svg>
+
+<!-- Drop-in screen: the first tap lets the music start -->
+<button type="button" id="enterScreen" class="enter" aria-label="Enter the site and start the music">
+  <img src="avatar.jpg" alt="">
+  <span class="enter-title">Drop <b>in</b></span>
+  <span class="enter-sub">Tap anywhere · music starts</span>
+</button>
+
+<!-- embers -->
+<span class="ember" style="--x:8%;--s:5px;--d:16s;--delay:0s;--dx:40px"></span>
+<span class="ember" style="--x:22%;--s:3px;--d:21s;--delay:3s;--dx:-30px"></span>
+<span class="ember" style="--x:37%;--s:6px;--d:18s;--delay:7s;--dx:50px"></span>
+<span class="ember" style="--x:51%;--s:4px;--d:24s;--delay:1s;--dx:-20px"></span>
+<span class="ember" style="--x:66%;--s:5px;--d:19s;--delay:9s;--dx:30px"></span>
+<span class="ember" style="--x:79%;--s:3px;--d:23s;--delay:5s;--dx:-45px"></span>
+<span class="ember" style="--x:90%;--s:6px;--d:17s;--delay:11s;--dx:-25px"></span>
+
+<div class="wrap">
+  <header class="bar">
+    <a class="brand" href="#top" id="top"><svg class="ic stroke"><use href="#i-cross"/></svg>Fahad FF <small>// lobby</small></a>
+    <div class="controls">
+      <button type="button" id="themeToggle" class="btn-round" aria-label="Switch between night and day mode"><svg class="ic" id="themeIcon"><use href="#i-moon"/></svg></button>
+      <button type="button" id="musicBtn" class="btn-round" aria-label="Play or pause music" aria-pressed="false"><svg class="ic" id="musicIcon"><use href="#i-play"/></svg></button>
+      <div class="volume">
+        <button type="button" class="vol-btn" id="volIcon" aria-label="Mute or unmute"><svg class="ic" id="volGlyph"><use href="#i-vol-up"/></svg></button>
+        <input type="range" id="volumeSlider" class="slider" min="0" max="100" value="30" aria-label="Volume">
+        <output id="volumeValue" for="volumeSlider">30%</output>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="copy">
+        <div class="eyebrow">Free Fire · Content creator</div>
+        <h1><span>𝑭𝒂𝒉𝒂𝒅</span><span class="ff">𝑭𝑭</span></h1>
+        <p class="handle"><svg class="ic"><use href="#i-bolt"/></svg>Fahad_FF-75</p>
+        <ul class="roles">
+          <li>Free Fire</li><li>Editor</li><li>YouTuber</li><li>Content creator</li>
+        </ul>
+        <div class="cta-row">
+          <a class="cta" href="https://www.youtube.com/@Fahad_FF-75" target="_blank" rel="noopener noreferrer"><svg class="ic"><use href="#i-youtube"/></svg>Subscribe</a>
+          <nav class="socials" aria-label="Social links">
+            <a class="social yt" href="https://www.youtube.com/@Fahad_FF-75" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg class="ic"><use href="#i-youtube"/></svg></a>
+            <a class="social dc" href="https://discord.gg/W95fTkYKP5" target="_blank" rel="noopener noreferrer" aria-label="Discord"><svg class="ic"><use href="#i-discord"/></svg></a>
+            <a class="social fb" href="https://www.facebook.com/fahadff75" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg class="ic"><use href="#i-facebook"/></svg></a>
+            <a class="social tg" href="#" aria-label="Telegram"><svg class="ic"><use href="#i-telegram"/></svg></a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="portrait">
+        <div class="frame">
+          <div class="ring-wrap" aria-hidden="true"><div class="ring"></div></div>
+          <img src="avatar.jpg" alt="Fahad FF avatar: a bunny in a blindfold with purple lightning">
+          <div class="brackets" aria-hidden="true"></div>
+          <span class="live" id="liveStatusBadge">Live</span>
+          <span class="booyah">BOOYAH!</span>
+        </div>
+        <div class="hud">
+          <div class="slot"><b class="where"><svg class="ic"><use href="#i-pin"/></svg>Bangladesh</b><span>Location</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shelf" aria-labelledby="shelfTitle">
+      <div class="shelf-head">
+        <h2 id="shelfTitle">Squad <em>loadout</em></h2>
+        <p> Click to open</p>
+      </div>
+      <div class="folders">
+        <div class="cell">
+          <div class="folder art-ember">
+            <div class="f-shadow"></div>
+            <div class="f-back"></div>
+            <div class="f-files" role="list" aria-label="Battle Royale videos">
+              <a class="sheet" role="listitem" style="--i:0" href="https://www.youtube.com/@Fahad_FF-75" target="_blank" rel="noopener noreferrer"><span class="sheet-head"><span class="sheet-name">Headshot Montage</span><span class="sheet-meta">Video</span></span><span class="sheet-thumb"><svg class="ic"><use href="#i-play"/></svg></span></a>
+              <a class="sheet" role="listitem" style="--i:1" href="https://youtu.be/IczcEv9us_w?si=3v8-fA0lVKfZwoS-" target="_blank" rel="noopener noreferrer"><span class="sheet-head"><span class="sheet-name">Squad Booyah</span><span class="sheet-meta">Video</span></span><span class="sheet-thumb"><svg class="ic"><use href="#i-play"/></svg></span></a>
+              <a class="sheet" role="listitem" style="--i:2" href="https://youtu.be/8ToPGnN-wmM?si=ynKq8XrSXLFSK_LM" target="_blank" rel="noopener noreferrer"><span class="sheet-head"><span class="sheet-name">Rush Gameplay</span><span class="sheet-meta">Video</span></span><span class="sheet-thumb"><svg class="ic"><use href="#i-play"/></svg></span></a>
+            </div>
+            <button type="button" class="f-front" aria-expanded="false" aria-label="Open Battle Royale folder">
+              <span class="f-label"><strong>Battle Royale</strong><span>Gameplay · Montages</span></span>
+              <span class="f-chev"><svg class="ic"><use href="#i-chev"/></svg></span>
+            </button>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="folder art-violet">
+            <div class="f-shadow"></div>
+            <div class="f-back"></div>
+            <div class="f-files" role="list" aria-label="Clash Squad videos">
+              <a class="sheet" role="listitem" style="--i:0" href="https://www.youtube.com/@Fahad_FF-75" target="_blank" rel="noopener noreferrer"><span class="sheet-head"><span class="sheet-name">4v4 Clutch</span><span class="sheet-meta">Video</span></span><span class="sheet-thumb"><svg class="ic"><use href="#i-play"/></svg></span></a>
+              <a class="sheet" role="listitem" style="--i:1" href="https://www.youtube.com/@Fahad_FF-75" target="_blank" rel="noopener noreferrer"><span class="sheet-head"><span class="sheet-name">Ranked Push</span><span class="sheet-meta">Video</span></span><span class="sheet-thumb"><svg class="ic"><use href="#i-play"/></svg></span></a>
+              <a class="sheet" role="listitem" style="--i:2" href="https://youtube.com/shorts/VLGBsa_lvcY?si=cet5haS-MWVSpmta" target="_blank" rel="noopener noreferrer"><span class="sheet-head"><span class="sheet-name">Best Moments</span><span class="sheet-meta">Video</span></span><span class="sheet-thumb"><svg class="ic"><use href="#i-play"/></svg></span></a>
+            </div>
+            <button type="button" class="f-front" aria-expanded="false" aria-label="Open Clash Squad folder">
+              <span class="f-label"><strong>Clash Squad</strong><span>Ranked · Clutches</span></span>
+              <span class="f-chev"><svg class="ic"><use href="#i-chev"/></svg></span>
+            </button>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="folder art-gold">
+            <div class="f-shadow"></div>
+            <div class="f-back"></div>
+            <div class="f-files" role="list" aria-label="Edits">
+              <a class="sheet" role="listitem" style="--i:0" href="https://www.youtube.com/@Fahad_FF-75" target="_blank" rel="noopener noreferrer"><span class="sheet-head"><span class="sheet-name">Beat Sync Edit</span><span class="sheet-meta">Edit</span></span><span class="sheet-thumb"><svg class="ic"><use href="#i-play"/></svg></span></a>
+              <a class="sheet" role="listitem" style="--i:1" href="https://www.youtube.com/@Fahad_FF-75" target="_blank" rel="noopener noreferrer"><span class="sheet-head"><span class="sheet-name">Shorts Pack</span><span class="sheet-meta">Edit</span></span><span class="sheet-thumb"><svg class="ic"><use href="#i-play"/></svg></span></a>
+              <a class="sheet" role="listitem" style="--i:2" href="https://www.youtube.com/@Fahad_FF-75" target="_blank" rel="noopener noreferrer"><span class="sheet-head"><span class="sheet-name">Intro Reel</span><span class="sheet-meta">Edit</span></span><span class="sheet-thumb"><svg class="ic"><use href="#i-play"/></svg></span></a>
+            </div>
+            <button type="button" class="f-front" aria-expanded="false" aria-label="Open Edits folder">
+              <span class="f-label"><strong>Edits</strong><span>Shorts · Beat sync</span></span>
+              <span class="f-chev"><svg class="ic"><use href="#i-chev"/></svg></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Fahad FF · Free Fire content creator</span>
+    <a href="https://www.youtube.com/@Fahad_FF-75" target="_blank" rel="noopener noreferrer">View channel →</a>
+    <span>Dev.by Kirito</span>
+  </footer>
+</div>
+
+<div class="cur-ring" aria-hidden="true"></div>
+<div class="cur-dot" aria-hidden="true"></div>
+
+<audio id="bgMusic" loop preload="auto">
+  <source src="STRUCT.wav" type="audio/mpeg">
+</audio>
+<script src="script.js"></script>
+</body>
+</html>
